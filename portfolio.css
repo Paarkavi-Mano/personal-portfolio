@@ -1,0 +1,500 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:"Jost", sans-serif;
+    list-style:none;
+    text-decoration:none;
+    scroll-behavior: smooth;
+}
+.image{
+    max-width:100%;
+    width:100px;
+    height:auto;
+    
+}
+.icon{
+    font-size:30px;
+    color:#000;
+    display:none;
+    cursor:pointer;
+   
+}
+body{
+    
+    color:#000;
+    
+
+    
+}
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index: 1000;
+    right:0;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background:transparent;
+    transition: .3s;
+    padding:30px 18%;
+}
+
+.nav-list{
+    display:flex;
+
+}
+
+.nav-list li{
+    position:relative;
+}
+.nav-list a{
+    font-size:17px;
+    font-weight:500;
+    color:black;
+    padding:10px 27px;
+}
+
+.nav-list a::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:2px;
+    background:#1273DE;
+    bottom:-10px;
+    left:0;
+    transition: ease 0.40s;
+}
+
+.nav-list a:hover::after{
+    width:100%;
+}
+.resume-button{
+    background:transparent;
+    display: inline-block;
+    padding:9px 30px;
+    color:#000;
+    font-size:16px;
+    font-weight:500;
+    border:2px solid #1273DE;
+    border-radius:25px;
+    transition:ease 0.50s;
+    
+}
+
+.resume-button:hover{
+    border:none;
+    background-color: #1273DE;
+    transform: scale(1.1);
+    color:#fff;
+    
+}
+
+section{
+    padding:100px 18%;
+    
+    
+}
+
+.home{
+    min-height:100vh;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image:url(background.jpg);
+    background-size:cover;
+    background-position:center;
+}
+
+
+.social-media-links{
+    padding-top:10px;
+    
+    
+}
+span{
+    color:#1273DE;
+}
+.greetings{
+    font-size:25px;
+}
+.domain{
+    font-family:cursive;
+    padding-top:9px;
+    padding-bottom: 9px;
+}
+.summary{
+    line-height:20px;
+    font-family: "Roboto";
+}
+
+.social-media-links a{
+    width:39px;
+    height:39px;
+    border-radius:50%;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    background:#9900EF;
+    font-size:17px;
+    color:#fff;
+    margin-right:22px;
+    margin-bottom:22px;
+    margin-top:12px;
+   
+}
+
+.social-media-links a:hover{
+     background:#FF5722;
+     transition: 0.3s;
+     transform:scale(1.1);
+     
+}
+.button{
+    color:#1273DE;
+    font-size:16px;
+    background:transparent;
+    border:2px solid #1273DE;
+    border-radius:20px;
+    padding:10px 40px;
+    display:inline-block;
+    transition:0.40s;
+}
+
+.button:hover{
+    border:none;
+    background-color: #1273DE;
+    color:#fff;
+}
+
+header.sticky{
+    background:#ffff;
+    padding:5px;
+    box-shadow:0px 0px 10px grey;
+}
+
+.items-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+}
+.card-item{
+    padding:45px 45px 45px 45px;
+    cursor:pointer;
+    transition: ease .5s;
+
+}
+.sub-image img{
+    max-width:100%;
+    width:60px;
+    height:auto;
+    margin-bottom:20px;
+}
+
+.card-title{
+    color:#1A237E;
+    font-size:16px;
+    font-weight:700;
+    font-family:"Roboto";
+
+}
+.card-description{
+    font-size:13px;
+    font-weight:500;
+    font-family:"Roboto";
+    color:#999999;
+    margin-top:7px;
+    line-height:21px;
+}
+
+.card-item:hover{
+    background-color:#fff;
+    border-radius:12px;
+    box-shadow:18px 0px 75px 0px grey;
+    transform:scale(1.1);
+}
+.about-image img{
+    max-width:100%;
+    
+    height:auto;
+    
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-text{
+    margin-left:50px;
+    
+}
+
+.about-text h3{
+    font-size:19px;
+    font-family:cursive;
+    padding-top:9px;
+    padding-bottom: 9px;
+}
+
+.about-text p{
+    line-height:20px;
+    font-family: "Roboto";
+    max-width:550px;
+    color:#999999;
+    font-weight:500;
+}
+.about-text a{
+    margin-top:13px;
+}
+
+.heading{
+    text-align: center;
+}
+.heading h3{
+    font-family:"Roboto";
+    font-weight:500;
+    color:#1A237E;
+    margin-bottom:9px;
+}
+.heading h2{
+    font-weight:bold;
+    color:#FF5722;
+    margin-bottom:9px;
+
+}
+
+.heading p{
+    font-weight:500;
+    color:#999999;
+    margin-bottom:9px;
+   
+}
+.portfolio-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap:20px;
+    align-items: center;
+    margin-top: 50px;    
+    text-align:center;
+    cursor:pointer;
+}
+.col{
+    position:relative;
+
+}
+.col img{
+    max-width:100%;
+    width:550px;
+    height:auto;
+    object-fit:cover;
+    border-radius:12px;
+}
+
+.layer{
+    background: transparent;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    border-radius: 12px;
+    position:absolute;
+    transition: all 0.40s;
+}
+
+.layer:hover{
+    background: linear-gradient(rgba(0,0,0,0.5) 0%, #191919);
+
+}
+
+.layer h1{
+    position:absolute;
+    width:100%;
+    color:#ffff;
+    font-family:"Roboto";
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    opacity:0;
+    transition: all 0.40s;
+}
+
+.layer:hover h1{
+    bottom:52%;
+    opacity:1;
+}
+
+
+.contact{
+    background-color: #eb6a96;
+    width:64%;
+    margin: 100px auto;
+    padding:70px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 12px;
+    background-image: url(intro.png);
+    background-size: cover;
+}
+
+
+.container h1{
+    font-weight:500;
+    color:#ffff;
+    font-family:"Roboto";
+}
+
+.container h3{
+    margin-top: 9px;
+    margin-bottom: 9px;
+    color:#ffff;
+    font-family:"Roboto";
+    
+}
+
+ .action form input[type="email"]{
+    max-width: 100%;
+    width:400px;
+    padding:12px 15px;
+    background-color: #fff;
+    color:#191919;
+    border:none;
+    outline:none;
+    
+    margin:0 10px 10px 0;
+    border-radius:30px;
+}
+
+.action form input[type="submit"]{
+    max-width:100%;
+    width:90px;
+    padding:10px;
+    background-color: #b25de1;
+    color:#ffff;
+    border:none;
+    outline:none;
+    border-radius: 20px;
+    margin:0 10px 10px 0;
+    cursor: pointer;
+}
+
+.action form input[type="submit"]:hover{
+    background-color: #9900EF;
+}
+
+@media (max-width:1425px){
+    header{
+		padding: 16px 3%;
+		transition: .3s;
+	}
+	header.sticky{
+		padding: 10px 3%;
+		transition: .3s;
+	}
+	section{
+		padding: 70px 3%;
+		transition: .3s;
+	}
+	.contact{
+		width: 95%;
+		transition: .3s;
+	}
+    
+    
+}
+
+@media (max-width:970px){
+    .icon{
+        display: block;
+    }
+    .home{
+        min-height:80vh;
+        
+    }
+    
+    .home-text{
+        padding-top:55px;
+    }
+    .nav-list{
+        position: absolute;
+        top:-600px;
+        left:0;
+        right:0;
+        flex-direction: column;
+        background: #1273DE;
+        text-align:right;
+        transition: all .4s;
+
+
+    }
+    .nav-list a{
+        font-size:13px;
+        font-family:"Roboto";
+        color:#ffff;
+        display:block;
+        padding:1.2rem;
+        margin:1.2rem;
+        border-right: 2px solid #ffff;
+
+    }
+    .nav-list a:hover{
+		background: #ffff;
+		color: #1273DE;
+	}
+    .nav-list a::after{
+          display: none;
+    }
+    .nav-list.active{
+		top: 100%;
+	}
+
+}
+
+@media (max-width:800px){
+    .home-text{
+        padding-top:55px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-image{
+		text-align: center;
+		margin-bottom: 30px;
+        
+	}
+    .about-text{
+        text-align: center;
+    }
+    .section{
+        padding:65% 3%;
+        transition:.3s;
+    }
+    .about-image img{
+        width:400px;
+    }
+    .items-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .card-item{
+        width:500px;
+    }
+}
+
+@media (max-width:540px){
+    .contact .action form input[type="email"] {
+		width: 310px;
+	}
+    .card-item{
+        width:400px;
+    }
+}
